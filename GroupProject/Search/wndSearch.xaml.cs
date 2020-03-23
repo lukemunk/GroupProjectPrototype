@@ -23,5 +23,78 @@ namespace GroupProject.Search
         {
             InitializeComponent();
         }
+
+        private void ClearSelectionBtn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void SelectInvoiceBtn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this.Hide();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void AddInvoicesBtn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this.Hide();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                e.Cancel = true;
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void InvoiceCbo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void TotalCostCbo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
+        }
     }
 }

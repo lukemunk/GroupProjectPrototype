@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Reflection;
+using GroupProject.Search;
 
 namespace GroupProject
 {
@@ -21,6 +22,7 @@ namespace GroupProject
     /// </summary>
     public partial class wndMain : Window
     {
+        private wndSearch searchWindow;
         #region Constructor
         /// <summary>
         /// Constructor for the main window
@@ -28,6 +30,7 @@ namespace GroupProject
         public wndMain()
         {
             InitializeComponent();
+            searchWindow = new wndSearch();
         }
         #endregion
 
@@ -42,7 +45,12 @@ namespace GroupProject
             try
             {
                 // Hide this current window
+                this.Hide();
                 // Open the search window
+                searchWindow.ShowDialog();
+                // ReOpen the main window
+                this.Show();
+
             }
             catch (Exception ex)
             {
