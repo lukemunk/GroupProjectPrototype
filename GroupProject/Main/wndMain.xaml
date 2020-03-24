@@ -1,26 +1,11 @@
-﻿<Window x:Class="GroupProject.wndMain"
+﻿<Window x:Class="GroupProject.Main.wndMain"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GroupProject"
+        xmlns:local="clr-namespace:GroupProject.Main"
         mc:Ignorable="d"
         Title="Deluxe Gems" Height="550" Width="950">
-    <Window.Resources>
-        <DataTemplate x:Key="ItemBoxTemplate">
-            <StackPanel Margin="5" Grid.IsSharedSizeScope="True">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="280" SharedSizeGroup="A"/>
-                        <ColumnDefinition Width="280" SharedSizeGroup="B"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="0" Text="{Binding ItemDescription}" FontWeight="Bold" FontSize="16" Foreground="Black" Width="Auto" HorizontalAlignment="Left" TextAlignment="Left"/>
-
-                    <TextBlock Grid.Column="1" Text="{Binding ItemCost, StringFormat=Cost: \{0:C\}}" FontSize="16" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Right" TextAlignment="Right"/>
-                </Grid>
-            </StackPanel>
-        </DataTemplate>
-    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.4*"/>
